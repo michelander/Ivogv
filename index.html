@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordem de Serviço</title>
+</head>
+<body>
+    <h1>Ordem de Serviço</h1>
+    <form action="/criar_ordem" method="POST">
+        <label for="numero_ordem">Número da Ordem:</label>
+        <input type="text" id="numero_ordem" name="numero_ordem"><br><br>
+
+        <label for="nome_cliente">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente" name="nome_cliente"><br><br>
+
+        <label for="endereco_cliente">Endereço do Cliente:</label>
+        <input type="text" id="endereco_cliente" name="endereco_cliente"><br><br>
+
+        <label for="telefone_cliente">Telefone do Cliente:</label>
+        <input type="text" id="telefone_cliente" name="telefone_cliente"><br><br>
+
+        <label for="email_cliente">E-mail do Cliente:</label>
+        <input type="email" id="email_cliente" name="email_cliente"><br><br>
+
+        <label for="descricao_servico">Descrição do Serviço:</label>
+        <textarea id="descricao_servico" name="descricao_servico"></textarea><br><br>
+
+        <label for="materiais_necessarios">Materiais Necessários:</label>
+        <textarea id="materiais_necessarios" name="materiais_necessarios"></textarea><br><br>
+
+        <input type="submit" value="Criar Ordem de Serviço">
+    </form>
+
+    <hr>
+
+    <h2>Pesquisar Ordem de Serviço</h2>
+    <form action="/pesquisar_ordem" method="POST">
+        <label for="numero_ordem">Número da Ordem:</label>
+        <input type="text" id="numero_ordem" name="numero_ordem"><br><br>
+
+        <input type="submit" value="Pesquisar">
+    </form>
+</body>
+</html>
